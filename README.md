@@ -63,10 +63,10 @@ Every recording gets its own folder in `Documents\VoiceTranscriber`:
 
 ## Install
 
-Download `x3k-VoiceTranscriber-<version>-setup.exe` (about 540 MB) from
-[Releases](https://github.com/xyster3k/X3K-VoiceTranscriber/releases/latest) and run it. It
-installs for your Windows user only, without administrator rights, adds Start menu and desktop
-shortcuts, and can be removed in **Settings > Apps**.
+**[Download the installer](https://github.com/xyster3k/X3K-VoiceTranscriber/releases/latest/download/x3k-VoiceTranscriber-setup.exe)**
+(about 540 MB; this link always gives the newest version) and run it. It installs for your
+Windows user only, without administrator rights, adds Start menu and desktop shortcuts, and can
+be removed in **Settings > Apps**. All versions: [Releases](https://github.com/xyster3k/X3K-VoiceTranscriber/releases).
 
 The program is not signed with a paid code-signing certificate, so Windows SmartScreen may
 say "Windows protected your PC" on the first start. Click **More info**, then **Run anyway**.
