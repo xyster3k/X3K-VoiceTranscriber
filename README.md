@@ -23,9 +23,9 @@ recognition runs on it.
 - **Transcript in seconds.** When you stop, the speech is transcribed by Whisper on your GPU.
   The transcript opens by itself and is already on the clipboard, ready to paste into notes,
   a document or a chat with an AI assistant.
-- **Many languages.** Whisper detects the language of the recording by itself (about 100
-  languages are supported); words and phrases in other languages inside the speech come out
-  as they were said. You can also fix the language in the settings.
+- **100 languages.** Whisper detects the language of the recording by itself, or you choose it
+  in the settings; words and phrases in other languages inside the speech come out as they were
+  said. See [Languages](#languages) for the full list.
 - **No length limit, safe against crashes.** Audio goes to disk as it is recorded. If the PC
   or the app stops mid-recording, the recording is transcribed on the next start.
 
@@ -37,6 +37,27 @@ Every recording gets its own folder in `Documents\VoiceTranscriber`:
 | `transcript.srt` | subtitles with exact times |
 | `segments.json` | every recognized segment with start, end and text |
 | `*.flac` | the audio, one file per device |
+
+## Languages
+
+x3k VoiceTranscriber transcribes every language Whisper knows:
+
+Afrikaans, Albanian, Amharic, Arabic, Armenian, Assamese, Azerbaijani, Bashkir, Basque,
+Belarusian, Bengali, Bosnian, Breton, Bulgarian, Burmese, Cantonese, Catalan, Chinese,
+Croatian, Czech, Danish, Dutch, English, Estonian, Faroese, Finnish, French, Galician,
+Georgian, German, Greek, Gujarati, Haitian Creole, Hausa, Hawaiian, Hebrew, Hindi, Hungarian,
+Icelandic, Indonesian, Italian, Japanese, Javanese, Kannada, Kazakh, Khmer, Korean, Lao, Latin,
+Latvian, Lingala, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam, Maltese,
+Maori, Marathi, Mongolian, Nepali, Norwegian, Norwegian Nynorsk, Occitan, Pashto, Persian,
+Polish, Portuguese, Punjabi, Romanian, Russian, Sanskrit, Serbian, Shona, Sindhi, Sinhala,
+Slovak, Slovenian, Somali, Spanish, Sundanese, Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar,
+Telugu, Thai, Tibetan, Turkish, Turkmen, Ukrainian, Urdu, Uzbek, Vietnamese, Welsh, Yiddish,
+Yoruba.
+
+Cantonese needs the large-v3 or large-v3-turbo model; the small model knows the other 99.
+Accuracy follows the amount of speech Whisper learned from in each language: it is highest for
+widely spoken languages such as English, Spanish, German, French, Chinese, Japanese, Portuguese
+and Russian.
 
 ## Requirements
 
