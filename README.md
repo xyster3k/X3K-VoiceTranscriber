@@ -77,8 +77,9 @@ works offline.
 
 ## Updates
 
-The app checks this repository for a new release when it starts and every 6 hours. When there
-is one, it asks whether to update now. **Yes** downloads the installer, checks it against the
+The copy from the Microsoft Store is updated by the Store. The copy from the installer above
+checks this repository for a new release when it starts and every 6 hours. When there is one,
+it asks whether to update now. **Yes** downloads the installer, checks it against the
 SHA-256 checksum GitHub publishes for the file, installs it over the current version and starts
 the app again; your settings and recordings stay. **Later** asks again at the next check. The
 question never interrupts a recording or a transcription.
@@ -152,8 +153,8 @@ On the CPU (Intel Core Ultra 7 265K, int8 mode, 3 minutes of the same speech set
 - Anonymous usage statistics go to `stats.deniatech.com` at the first start on a computer,
   after an update and at most once a day while the app runs. Each message holds a random
   install number created by the app, the app version (and the previous one after an update),
-  the Windows version, the names and memory of the NVIDIA GPUs, and the chosen model and
-  device. The server stores the country Cloudflare reports for the connection; it does not
+  where the app was installed from (Microsoft Store or GitHub), the Windows version, the names
+  and memory of the NVIDIA GPUs, and the chosen model and device. The server stores the country Cloudflare reports for the connection; it does not
   store the IP address. Audio, transcripts, file names, user and computer names are never
   sent. To turn the statistics off, clear **Send anonymous usage statistics** in **Settings**.
 - The browser bookmark works only on your own computer (`127.0.0.1`) and carries a random key.
