@@ -179,6 +179,8 @@ On the CPU (Intel Core Ultra 7 265K, int8 mode, 3 minutes of the same speech set
   store the IP address. Audio, transcripts, file names, user and computer names are never
   sent. To turn the statistics off, clear **Send anonymous usage statistics** in **Settings**.
 - The browser bookmark works only on your own computer (`127.0.0.1`) and carries a random key.
+- x3k VoiceTranscriber for Mac (Mac App Store) collects no data and sends no statistics. Its only
+  network use is the one-time download of the Whisper model from Hugging Face.
 
 ## Troubleshooting
 
