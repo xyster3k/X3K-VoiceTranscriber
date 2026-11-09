@@ -1,0 +1,28 @@
+x3k VoiceTranscriber - License
+
+Copyright (c) 2026 x3k. All rights reserved.
+
+1. You may download, install and use x3k VoiceTranscriber free of charge, for personal and
+   commercial purposes, on any number of computers.
+
+2. You may share the unmodified installer or the unmodified portable archive, free of charge,
+   with this license included.
+
+3. You may not sell the software, and you may not modify, decompile or disassemble the
+   x3k VoiceTranscriber program files, except where the law or a third-party license listed in
+   THIRD-PARTY-NOTICES.txt allows it.
+
+4. The software includes third-party components under their own licenses, listed in
+   THIRD-PARTY-NOTICES.txt. Nothing in this license limits your rights under those licenses;
+   in particular, the LGPL-licensed components ship as separate files you may replace with
+   your own builds.
+
+5. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
+   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+6. You are responsible for recording only what you are allowed to record. Laws on recording
+   conversations differ between countries; some require the consent of every participant.

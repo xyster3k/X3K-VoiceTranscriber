@@ -1,0 +1,54 @@
+x3k VoiceTranscriber - third-party components
+
+x3k VoiceTranscriber includes or downloads the components below. Each is the property of its
+authors and is used under its own license. The full license texts are available at the
+project pages listed.
+
+Speech recognition
+- faster-whisper 1.1.0 - MIT License - https://github.com/SYSTRAN/faster-whisper
+- CTranslate2 4.8.3 - MIT License - https://github.com/OpenNMT/CTranslate2
+- Whisper models (OpenAI), converted for CTranslate2, downloaded from Hugging Face on first
+  use - MIT License - https://github.com/openai/whisper
+- Silero VAD (voice activity detection, bundled with faster-whisper) - MIT License -
+  https://github.com/snakers4/silero-vad
+- ONNX Runtime 1.31.0 - MIT License - https://github.com/microsoft/onnxruntime
+- tokenizers 0.22.2 - Apache License 2.0 - https://github.com/huggingface/tokenizers
+- huggingface_hub 1.33.0 - Apache License 2.0 - https://github.com/huggingface/huggingface_hub
+
+NVIDIA libraries (redistributed with the application under the NVIDIA license terms)
+- NVIDIA cuBLAS (cublas64_12.dll, cublasLt64_12.dll) from the CUDA Toolkit 12 - NVIDIA CUDA
+  Toolkit End User License Agreement - https://docs.nvidia.com/cuda/eula/
+- NVIDIA cuDNN loader (cudnn64_9.dll, shipped with CTranslate2) - NVIDIA cuDNN Software
+  License Agreement - https://docs.nvidia.com/deeplearning/cudnn/latest/reference/eula.html
+- Intel OpenMP runtime (libiomp5md.dll, shipped with CTranslate2) - Intel Simplified Software
+  License
+
+Audio
+- PyAV 18.1.0 - BSD 3-Clause License - https://github.com/PyAV-Org/PyAV
+- FFmpeg libraries (shipped with PyAV as separate DLLs) - GNU Lesser General Public License
+  v2.1 or later - https://ffmpeg.org - the DLLs in the av folder may be replaced with your own
+  builds
+- PyAudioWPatch 0.2.12.9 (with PortAudio, MIT-style license) - Apache License 2.0 -
+  https://github.com/s0d3s/PyAudioWPatch
+- python-soundfile 0.14.0 - BSD 3-Clause License - https://github.com/bastibe/python-soundfile
+- libsndfile (shipped with python-soundfile as a separate DLL) - GNU Lesser General Public
+  License v2.1 - https://github.com/libsndfile/libsndfile - the DLL in the _soundfile_data
+  folder may be replaced with your own build
+- pycaw - MIT License - https://github.com/AndreMiras/pycaw
+- comtypes 1.4.17 - MIT License - https://github.com/enthought/comtypes
+
+Interface and runtime
+- pystray 0.19.5 - GNU Lesser General Public License v3.0 - https://github.com/moses-palmer/pystray
+  - shipped as its unmodified Python source in the pystray folder; you may replace it with
+  another version
+- Pillow 13.0.0 - MIT-CMU License - https://github.com/python-pillow/Pillow
+- NumPy 1.26.4 - BSD 3-Clause License - https://numpy.org
+- six 1.17.0 - MIT License - https://github.com/benjaminp/six
+- requests 2.34.2, urllib3 2.8.0, idna 3.20, charset-normalizer 3.5.2, certifi 2026.10.23
+  (MPL-2.0), httpx 0.28.1, httpcore 1.0.9, h11 0.16.0, anyio 4.16.0, filelock 4.2.9,
+  fsspec 2026.9.0, PyYAML 6.0.3, packaging 26.3, tqdm 4.70.1 (MPL-2.0 and MIT),
+  typing_extensions 4.16.0 - their respective MIT, BSD, Apache 2.0, MPL 2.0 and PSF licenses
+- Python 3.11 - Python Software Foundation License - https://www.python.org
+- Tcl/Tk 8.6 - Tcl/Tk License (BSD-style) - https://www.tcl.tk
+- Compiled with Nuitka - https://nuitka.net - its runtime files are under the Apache
+  License 2.0
