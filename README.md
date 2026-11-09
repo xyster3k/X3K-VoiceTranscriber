@@ -1,3 +1,5 @@
+<img src="docs/logo.png" width="96" alt="x3k VoiceTranscriber logo">
+
 # x3k VoiceTranscriber
 
 Record everything you hear on your Windows PC (a Zoom, Teams, Google Meet, Telegram or
@@ -56,7 +58,8 @@ Every recording gets its own folder in `Documents\VoiceTranscriber`:
   faster than real time on an Intel Core Ultra 7 265K, small about 10 times.
 - **Disk:** about 1.2 GB for the program (most of it NVIDIA's cuBLAS library), plus the model,
   plus about 65 MB per hour of recorded speech.
-- **Internet** only once, to download the model.
+- **Internet** once, to download the model. After that the app works offline; when online, it
+  checks for updates and sends anonymous usage statistics (see [Privacy](#privacy)).
 
 ## Install
 
@@ -111,6 +114,7 @@ transcribe a recording again from there.
 | Hotkey | the global shortcut, Ctrl+Alt+F9 by default |
 | Open / copy the transcript | what happens when a transcript is ready |
 | Keep the window on top, Start with Windows | window and autostart |
+| Send anonymous usage statistics | on by default; what is sent is listed under [Privacy](#privacy) |
 | Browser bookmark | a local link that starts or stops a recording |
 
 ## Speed and GPU memory
