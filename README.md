@@ -20,7 +20,8 @@ recognition runs on it.
   the recording.
 - **Optionally your microphone too.** Tick **Also record my microphone** and the transcript
   labels each paragraph **Me** or **Others**.
-- **Transcript in seconds.** When you stop, the speech is transcribed by Whisper on your GPU.
+- **Transcript in seconds.** When you stop, the speech is transcribed on your GPU: Russian by
+  GigaAM-v3, a model made for Russian, every other language by Whisper.
   The transcript opens by itself and is already on the clipboard, ready to paste into notes,
   a document or a chat with an AI assistant.
 - **100 languages.** Whisper detects the language of the recording by itself, or you choose it
@@ -59,6 +60,12 @@ Accuracy follows the amount of speech Whisper learned from in each language: it 
 widely spoken languages such as English, Spanish, German, French, Chinese, Japanese, Portuguese
 and Russian.
 
+Russian is transcribed by [GigaAM-v3](https://github.com/salute-developers/GigaAM) (Whisper
+still detects the language). On two real Russian calls, of 8 and 81 minutes, it wrote 16% more
+words than Whisper large-v3, with punctuation and capitals, and left one stretch of 4-5 seconds
+of speech without text where Whisper left 6 and 21. **Settings > Russian speech** switches
+Russian back to Whisper.
+
 ## Requirements
 
 - **Windows 10 or 11, 64-bit.**
@@ -78,14 +85,15 @@ and Russian.
 - **No NVIDIA GPU?** The app runs on the CPU too, slower: large-v3 transcribed about 2 times
   faster than real time on an Intel Core Ultra 7 265K, small about 10 times.
 - **Disk:** about 1.2 GB for the program (most of it NVIDIA's cuBLAS library), plus the model,
-  plus about 65 MB per hour of recorded speech.
+  plus 0.9 GB for GigaAM-v3 when you transcribe Russian, plus about 65 MB per hour of recorded
+  speech. GigaAM-v3 runs on any DirectX 12 GPU (NVIDIA, AMD or Intel) or on the CPU.
 - **Internet** once, to download the model. After that the app works offline; when online, it
   checks for updates and sends anonymous usage statistics (see [Privacy](#privacy)).
 
 ## Install
 
 **[Download the installer](https://github.com/xyster3k/X3K-VoiceTranscriber/releases/latest/download/x3k-VoiceTranscriber-setup.exe)**
-(about 540 MB; this link always gives the newest version) and run it. It installs for your
+(about 550 MB; this link always gives the newest version) and run it. It installs for your
 Windows user only, without administrator rights, adds Start menu and desktop shortcuts, and can
 be removed in **Settings > Apps**. All versions: [Releases](https://github.com/xyster3k/X3K-VoiceTranscriber/releases).
 
@@ -93,8 +101,8 @@ The program is not signed with a paid code-signing certificate, so Windows Smart
 say "Windows protected your PC" on the first start. Click **More info**, then **Run anyway**.
 
 On the first transcription the app downloads the Whisper model you chose (3.1 GB for
-large-v3) from Hugging Face; the recordings list shows the download progress. After that it
-works offline.
+large-v3) from Hugging Face, and on the first Russian one GigaAM-v3 (0.9 GB); the recordings
+list shows the download progress. After that it works offline.
 
 ## Updates
 
@@ -126,8 +134,9 @@ transcribe a recording again from there.
 | Microphone | which microphone to record when the microphone is on |
 | Speech language | detect automatically, or always one language |
 | Model | large-v3, large-v3-turbo or small (see [Speed and GPU memory](#speed-and-gpu-memory)) |
+| Russian speech | GigaAM-v3 (the default, most accurate for Russian) or the Whisper model above |
 | Transcribe on | the GPU with the most memory (automatic), a chosen GPU, or the CPU |
-| Names and terms | words the transcript should spell your way (names, products, jargon) |
+| Names and terms | words the transcript should spell your way (names, products, jargon); used by Whisper, not by GigaAM-v3 |
 | Hotkey | the global shortcut, Ctrl+Alt+F9 by default |
 | Open / copy the transcript | what happens when a transcript is ready |
 | Keep the window on top, Start with Windows | window and autostart |
@@ -180,7 +189,7 @@ On the CPU (Intel Core Ultra 7 265K, int8 mode, 3 minutes of the same speech set
   sent. To turn the statistics off, clear **Send anonymous usage statistics** in **Settings**.
 - The browser bookmark works only on your own computer (`127.0.0.1`) and carries a random key.
 - x3k VoiceTranscriber for Mac (Mac App Store) collects no data and sends no statistics. Its only
-  network use is the one-time download of the Whisper model from Hugging Face.
+  network use is the one-time download of the speech models from Hugging Face.
 
 ## Troubleshooting
 
@@ -202,7 +211,9 @@ x3k VoiceTranscriber is free to use, for personal and commercial purposes; see
 [LICENSE.txt](LICENSE.txt). It is built on open-source components, listed with their licenses
 in [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt). Speech recognition: OpenAI Whisper
 through [faster-whisper](https://github.com/SYSTRAN/faster-whisper) and
-[CTranslate2](https://github.com/OpenNMT/CTranslate2).
+[CTranslate2](https://github.com/OpenNMT/CTranslate2); for Russian, GigaAM-v3 through
+[onnx-asr](https://github.com/istupakov/onnx-asr) and
+[ONNX Runtime](https://github.com/microsoft/onnxruntime) with DirectML.
 
 Laws on recording conversations differ between countries; some require the consent of every
 participant. Make sure you are allowed to record.

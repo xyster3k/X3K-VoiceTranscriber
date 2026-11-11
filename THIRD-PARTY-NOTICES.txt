@@ -11,7 +11,14 @@ Speech recognition
   use - MIT License - https://github.com/openai/whisper
 - Silero VAD (voice activity detection, bundled with faster-whisper) - MIT License -
   https://github.com/snakers4/silero-vad
-- ONNX Runtime 1.31.0 - MIT License - https://github.com/microsoft/onnxruntime
+- ONNX Runtime 1.24.4 with DirectML (onnxruntime-directml) - MIT License -
+  https://github.com/microsoft/onnxruntime
+- DirectML (DirectML.dll, shipped with ONNX Runtime) - Microsoft DirectML redistributable
+  license terms - https://www.nuget.org/packages/Microsoft.AI.DirectML
+- onnx-asr 0.12.0 - MIT License - https://github.com/istupakov/onnx-asr
+- GigaAM-v3 speech recognition model for Russian (GigaChat Team), converted to ONNX
+  (istupakov/gigaam-v3-onnx), downloaded from Hugging Face on first use - MIT License -
+  https://github.com/salute-developers/GigaAM
 - tokenizers 0.22.2 - Apache License 2.0 - https://github.com/huggingface/tokenizers
 - huggingface_hub 1.33.0 - Apache License 2.0 - https://github.com/huggingface/huggingface_hub
 
