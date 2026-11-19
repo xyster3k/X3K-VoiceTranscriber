@@ -61,8 +61,7 @@ widely spoken languages such as English, Spanish, German, French, Chinese, Japan
 and Russian.
 
 Russian is transcribed by [GigaAM-v3](https://github.com/salute-developers/GigaAM) (Whisper
-still detects the language, for every stretch of speech of up to 10 seconds, so a recording
-that switches between Russian and another language gets each part in its own language). On two real Russian calls, of 8 and 81 minutes, it wrote 16% more
+still detects the language). On two real Russian calls, of 8 and 81 minutes, it wrote 16% more
 words than Whisper large-v3, with punctuation and capitals, and left one stretch of 4-5 seconds
 of speech without text where Whisper left 6 and 21. **Settings > Russian speech** switches
 Russian back to Whisper.
