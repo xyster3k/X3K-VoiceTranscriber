@@ -129,8 +129,10 @@ question never interrupts a recording or a transcription.
 3. Press **Stop recording**. A few seconds later the transcript opens, and its text is on the
    clipboard.
 
-The **Recordings** list shows every recording with its status; you can open, copy or
-transcribe a recording again from there.
+The **Recordings** list shows every recording with its title and status; you can open, copy,
+rename or transcribe a recording again from there. The title comes from the transcript: its
+first substantive sentence, at most eight words. **Rename** (or F2, or a double-click on the
+title) sets your own; an empty field brings the automatic title back.
 
 ## Settings
 
