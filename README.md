@@ -100,9 +100,16 @@ be removed in **Settings > Apps**. All versions: [Releases](https://github.com/x
 The program is not signed with a paid code-signing certificate, so Windows SmartScreen may
 say "Windows protected your PC" on the first start. Click **More info**, then **Run anyway**.
 
-On the first transcription the app downloads the Whisper model you chose (3.1 GB for
-large-v3) from Hugging Face, and on the first Russian one GigaAM-v3 (0.9 GB); the recordings
-list shows the download progress. After that it works offline.
+Right after the first start the app downloads the Whisper model you chose (1.6 GB for
+large-v3-turbo, 3.1 GB for large-v3) from Hugging Face, and GigaAM-v3 (0.9 GB) the first time
+it transcribes Russian; the line above the recordings list shows what it is doing and how far it
+got. After that it works offline. A short guide on the first start explains the steps; **How it
+works** opens it again.
+
+The models are kept in `%LOCALAPPDATA%\VoiceTranscriber\models`. **Settings > Speech models**
+shows the folder and its size and can open it, move the models to another folder or delete
+them. Removing the app in **Settings > Apps** deletes the downloaded models and update files;
+your recordings and transcripts stay.
 
 ## Updates
 
