@@ -108,8 +108,9 @@ works** opens it again.
 
 The models are kept in `%LOCALAPPDATA%\VoiceTranscriber\models`. **Settings > Speech models**
 shows the folder and its size and can open it, move the models to another folder or delete
-them. Removing the app in **Settings > Apps** deletes the downloaded models and update files;
-your recordings and transcripts stay.
+them. Removing the app in **Settings > Apps** asks what to delete with it: speech models and
+logs with downloaded updates are ticked, recordings and transcripts and settings are not.
+**Settings > Delete app data** offers the same choice without removing the app.
 
 ## Updates
 
