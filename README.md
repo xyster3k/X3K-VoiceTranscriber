@@ -27,6 +27,10 @@ recognition runs on it.
 - **100 languages.** Whisper detects the language of the recording by itself, or you choose it
   in the settings; words and phrases in other languages inside the speech come out as they were
   said. See [Languages](#languages) for the full list.
+- **Files you already have.** **Transcribe a file…** above the list takes audio or video files
+  (voice messages, phone recordings, MP3, M4A, WAV, OGG, OPUS, FLAC, MP4 and more). Each one
+  appears in the list like a recording and gets its own transcript; the original file stays
+  where it is.
 - **No length limit, safe against crashes.** Audio goes to disk as it is recorded. If the PC
   or the app stops mid-recording, the recording is transcribed on the next start.
 
